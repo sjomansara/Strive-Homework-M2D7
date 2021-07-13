@@ -542,6 +542,14 @@
     }
     window.addEventListener("load",function() { changeTitleColor("yellow") })
 
+    // EX13
+
+    const changeJumbotronBackground = function(color) {
+      let jumbotron = document.getElementsByClassName("jumbotron")[0]
+      console.log(jumbotron)
+      jumbotron.style.backgroundColor = color
+    }
+    window.addEventListener("load",function() { changeJumbotronBackground("white") })
 
     </script>
   </body>
