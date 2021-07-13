@@ -521,21 +521,28 @@
     // EX11
 
     const addToNavbar = function(link) {
-            let navbar = document.getElementsByClassName("nav")[0]
-            let newLink = document.createElement("a")
-            console.log(navbar)
-            var linkText = document.createTextNode(link)
-            newLink.appendChild(linkText)
-            newLink.title = link
-            newLink.href = "#"
-            newLink.className = "p-2 text-muted"
-            navbar.appendChild(newLink)
-          }
+      let navbar = document.getElementsByClassName("nav")[0]
+      let newLink = document.createElement("a")
+      console.log(navbar)
+      var linkText = document.createTextNode(link)
+      newLink.appendChild(linkText)
+      newLink.title = link
+      newLink.href = "#"
+      newLink.className = "p-2 text-muted"
+      navbar.appendChild(newLink)
+    }
     window.addEventListener("load",function() { addToNavbar("New Link") })
 
     // EX12
 
-    
+    const changeTitleColor = function(color) {
+      let title = document.querySelector("h1")
+      console.log("title is: ", title)
+      title.style.color = color
+    }
+    window.addEventListener("load",function() { changeTitleColor("yellow") })
+
+
     </script>
   </body>
 </html>
