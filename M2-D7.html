@@ -545,8 +545,8 @@
     // EX13
 
     const changeJumbotronBackground = function() {
-      let getBackground = document.querySelector(".bg-dark")
-      getBackground.classList.remove("bg-dark")
+      let background = document.querySelector(".bg-dark")
+      background.classList.remove("bg-dark")
     }
     // window.addEventListener("load", function() { changeJumbotronBackground("bg-light") })
 
@@ -565,6 +565,14 @@
       object.classList.add("col-6")
     }
     // window.addEventListener("load", function() { changeColumnSize("h1") })
+
+    // EX16
+
+    const removeSearchIcon = function() {
+      let object = document.querySelector("svg")
+      object.remove("svg")
+    }
+    // window.addEventListener("load", function() { removeSearchIcon("svg") })
 
     </script>
   </body>
