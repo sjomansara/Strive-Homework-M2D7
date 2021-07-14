@@ -544,12 +544,11 @@
 
     // EX13
 
-    const changeJumbotronBackground = function(color) {
-      let jumbotron = document.getElementsByClassName("jumbotron")[0]
-      console.log(jumbotron)
-      jumbotron.style.backgroundColor = color
+    const changeJumbotronBackground = function() {
+      let getBackground = document.querySelector(".bg-dark")
+      getBackground.classList.remove("bg-dark")
     }
-    // window.addEventListener("load",function() { changeJumbotronBackground("white") })
+    // window.addEventListener("load", function() { changeJumbotronBackground("bg-light") })
 
     </script>
   </body>
